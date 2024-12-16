@@ -1,2 +1,3 @@
 # explorer
-Embeddable seed explorer for @combomash/engine
+
+React Component for exploring seeds in @combomash/engine stochastic media
