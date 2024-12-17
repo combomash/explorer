@@ -1,5 +1,8 @@
 {
     "name": "@combomash/explorer",
+    "main": "dist/explorer.umd.js",
+    "module": "dist/explorer.es.js",
+    "types": "dist/index.d.ts",
     "private": true,
     "type": "module",
     "version": "0.0.0",
@@ -27,14 +30,12 @@
     ],
     "exports": {
         ".": {
+            "types": "./dist/index.d.ts",
             "import": "./dist/explorer.es.js",
             "require": "./dist/explorer.umd.js"
         },
         "./dist/style.css": "./dist/style.css"
     },
-    "main": "./dist/explorer.umd.js",
-    "module": "./dist/explorer.es.js",
-    "types": "./dist/index.d.ts",
     "peerDependencies": {
         "react": "^18.3.1",
         "react-dom": "^18.3.1",

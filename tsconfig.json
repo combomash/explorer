@@ -21,7 +21,11 @@
         "noFallthroughCasesInSwitch": true,
         "noUncheckedSideEffectImports": true,
 
-        "esModuleInterop": true
+        /* Additions */
+        "declaration": true,
+        "emitDeclarationOnly": true,
+        "esModuleInterop": true,
+        "outDir": "dist"
     },
     "include": ["src", "globals.d.ts"]
 }

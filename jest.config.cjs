@@ -3,13 +3,14 @@ module.exports = {
     testEnvironment: 'jsdom',
     transform: {
         '^.+\\.js$': 'jest-esm-transformer',
+        '^.+\\.(ts|tsx)$': [
+            'ts-jest',
+            {
+                tsconfig: './tsconfig.json',
+            },
+        ],
     },
     moduleNameMapper: {
         '\\.css$': 'identity-obj-proxy',
-    },
-    globals: {
-        'ts-jest': {
-            tsConfig: './tsconfig.json',
-        },
     },
 };
